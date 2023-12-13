@@ -1,7 +1,79 @@
-@media (max-width: 768px) {
-    /*.navbar-collapse {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }*/
+:root {
+  --main-background-color: rgb(255, 165, 0);
+  --hero-picture-xs: 70vw;
+  --hero-picture-sm: 60vw;
+  --hero-picture-md: 50vw;
+  --hero-picture-lg: 30vw;
+
+  --hero-height-xs:auto;
+  --hero-height-lg: 100vh;
+}
+
+
+
+
+
+.bg-main-background-color {
+  background-color: var(--main-background-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hero-picture-md {
+}
+
+#hero {
+   
+}
+
+/* Extra Small (xs) - Default: Up to 576px */
+@media (min-width: 0px) and (max-width: 575.98px) {
+  /* Your styles for extra small screens go here */
+
+  .hero-picture-xs {
+    width: var(--hero-picture-xs);
   }
+
+  .hero-height-xs{
+    height: var(--hero-height-xs);
+  }
+}
+
+
+/* Small (sm) - Media Query: @media (min-width: 576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Your styles for small screens go here */
+    .hero-picture-xs {
+        width: var(--hero-picture-sm);
+      }
+
+  }
+
+
+/* Medium (md) - Media Query: @media (min-width: 768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Your styles for medium screens go here */
+
+    .hero-picture-md {
+        max-width: var(--hero-picture-md);
+      }
+
+
+
+  }
+
+/* Large (lg) - Media Query: @media (min-width: 992px) */
+@media (min-width: 992px) and (max-width: 2024px) {
+  /* Your styles for large screens go here */
+
+  .hero-picture-lg {
+    max-width: var(--hero-picture-lg);
+  }
+
+  .hero-height-lg{
+    height: var(--hero-height-lg) !important;
+  }
+
+}
