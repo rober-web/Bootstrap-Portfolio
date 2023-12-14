@@ -10,6 +10,10 @@
   --hero-height-lg: 100vh;
 }
 
+.centered{
+  display: flex;
+  justify-content: center;
+}
 * {
   box-sizing: border-box;
 }
