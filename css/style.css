@@ -14,6 +14,12 @@
   display: flex;
   justify-content: center;
 }
+
+.skills-badge{
+  background-color: orange;
+  padding:10px;
+  border-radius: 10px;
+}
 * {
   box-sizing: border-box;
 }
