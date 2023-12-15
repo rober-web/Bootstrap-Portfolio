@@ -75,14 +75,18 @@ a {
 
 form {
   background-color: #fff;
+  border-radius: 10px;
+  box-shadow: -12px 12px 10px -8px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: -12px 12px 10px -8px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: -12px 12px 10px -8px rgba(0, 0, 0, 0.52);
 }
 
 /**** Footer ****/
 
-footer{
+footer {
   background-color: var(--dark-color);
 }
-footer p{
+footer p {
   color: #ffffff !important;
 }
 
@@ -145,7 +149,7 @@ footer p{
     font-size: var(--section-title-size-md);
   }
 
-  .page-section .p-section-text{
+  .page-section .p-section-text {
     font-size: var(--section-text-size-md);
   }
 }
@@ -178,7 +182,7 @@ footer p{
     font-size: var(--section-title-size-lg);
   }
 
-  .page-section .p-section-text{
+  .page-section .p-section-text {
     font-size: var(--section-text-size-lg);
   }
 }
