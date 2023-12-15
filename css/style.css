@@ -2,6 +2,7 @@
   /*Hero Section variables for all sizes */
 
   --main-background-color: rgb(255, 165, 0);
+  --section-background-color:rgb(255, 219, 153);
   --hero-cta-btn: rgb(36, 123, 160);
   --hero-picture-xs: 70vw;
   --hero-picture-sm: 60vw;
@@ -9,9 +10,15 @@
   --hero-picture-lg: 30vw;
   --hero-height-xs: auto;
   --hero-height-lg: 100vh;
+  --hero-main-title-size-lg:4em;
+  --hero-main-title-size-md:3em;
+  --hero-main-title-size-sm:2.4em;
 
-  /*Hero Section variables for all sizes */
+  /*section height for large screen*/
+  --section-height-lg: 100vh;
 }
+
+
 
 .centered {
   display: flex;
@@ -28,6 +35,9 @@
   box-sizing: border-box;
 }
 
+.page-section:nth-child(even){
+ background-color: var(--section-background-color);
+}
 /* Primary background color, will be applied on the main parts of the design */
 
 .bg-main-background-color {
@@ -48,13 +58,13 @@
 /**** Work Section ****/
 
 .work{
-  background-color: rgb(255, 219, 153);
+  
 }
 
 /**** Form ****/
 
 form{
-  background-color: #FFDB99;
+  background-color: #fff;
 }
 /****************************** MEDIA QUERIES ********************************/
 
@@ -76,6 +86,11 @@ form{
   .hero-picture-xs {
     width: var(--hero-picture-sm);
   }
+
+  .hero-main-title{
+    font-size: var(--hero-main-title-size-sm);
+  }
+
 }
 
 /****************************** MD ********************************/
@@ -84,6 +99,10 @@ form{
 @media (min-width: 768px) and (max-width: 991.98px) {
   .hero-picture-md {
     max-width: var(--hero-picture-md);
+  }
+
+  .hero-main-title-md{
+    font-size: var(--hero-main-title-size-md);
   }
 
   .card-size {
@@ -104,7 +123,15 @@ form{
     height: var(--hero-height-lg) !important;
   }
 
+  .hero-main-title{
+    font-size: var(--hero-main-title-size-lg);
+  }
+
   .card-size {
     width: 20%;
+  }
+
+  .page-section{
+    height: 100vh;
   }
 }
