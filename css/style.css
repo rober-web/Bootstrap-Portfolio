@@ -43,7 +43,9 @@
   box-sizing: border-box;
   color: var(--dark-color);
 }
-
+a {
+  text-decoration: none;
+}
 .page-section:nth-child(even) {
   background-color: var(--section-background-color);
 }
@@ -74,6 +76,16 @@
 form {
   background-color: #fff;
 }
+
+/**** Footer ****/
+
+footer{
+  background-color: var(--dark-color);
+}
+footer p{
+  color: #ffffff !important;
+}
+
 /****************************** MEDIA QUERIES ********************************/
 
 /* Extra Small (xs) - Default: Up to 576px */
