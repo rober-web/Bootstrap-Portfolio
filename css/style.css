@@ -37,11 +37,21 @@
 .btn-hero{
   background-color: var(--hero-cta-btn);
   color:#fff;
+  border-radius: 20px;
 }
 .btn-hero:hover{
   background-color: #1D6584;
   color:#fff;
+  outline:3px solid #fff;
 }
+
+/**** Work Section ****/
+
+.work{
+  background-color: rgb(255, 219, 153);
+}
+
+/**** Form ****/
 
 form{
   background-color: #FFDB99;
