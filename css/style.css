@@ -64,7 +64,7 @@ a {
   background-color: #1d6584;
   color: #fff;
   outline: 3px solid #fff;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 .btn-form {
@@ -74,11 +74,20 @@ a {
 }
 
 .btn-form:hover {
-  background-color: rgb(204, 133, 0); 
+  background-color: rgb(204, 133, 0);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 /**** Work Section ****/
+
+/**** Skills ****/
+
+#skills {
+  background-image: url("/images/icon-tools.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0);
+}
 
 /**** Form ****/
 
@@ -100,15 +109,15 @@ footer p {
 }
 
 footer a {
-padding:10px;
-border-radius: 10px;
-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
 }
 
 .footer a:hover {
   text-decoration: none;
-  box-shadow: 0 0 10px rgba(243, 165, 20, 0.5); 
-  outline: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 10px rgba(243, 165, 20, 0.5);
+  outline: 1px solid rgba(255, 255, 255, 0.1);
   transition: box-shadow 0.3s ease;
 }
 
