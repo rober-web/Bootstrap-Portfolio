@@ -20,6 +20,7 @@
   padding:10px;
   border-radius: 10px;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -59,6 +60,11 @@
   .hero-picture-md {
     max-width: var(--hero-picture-md);
   }
+
+  .card-size{
+    width:45%;
+    margin-bottom:2em;
+  }
 }
 
 /****************************** LG ********************************/
@@ -71,5 +77,9 @@
 
   .hero-height-lg {
     height: var(--hero-height-lg) !important;
+  }
+
+  .card-size{
+    width:20%;
   }
 }
