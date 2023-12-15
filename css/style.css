@@ -68,7 +68,6 @@ a {
 
 /**** Work Section ****/
 
-
 /**** Form ****/
 
 form {
@@ -105,9 +104,8 @@ footer p {
   }
 
   #work .card {
-    margin-bottom: 1em;;
+    margin-bottom: 1em;
   }
-  
 }
 
 /****************************** SM ********************************/
@@ -131,10 +129,8 @@ footer p {
   }
 
   #work .card {
-    margin-bottom: 2em;;
+    margin-bottom: 2em;
   }
-  
-
 }
 
 /****************************** MD ********************************/
@@ -165,13 +161,13 @@ footer p {
   #work .card {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
-  
+
+  /*added box-shadow */
   #work .card:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05); /* Adjust the scale factor as needed */
-    cursor:zoom-in;
+    transform: scale(1.05);
+    cursor: zoom-in;
   }
-
 }
 
 /****************************** LG ********************************/
@@ -206,13 +202,24 @@ footer p {
     font-size: var(--section-text-size-lg);
   }
 
+  /* Added transition*/
   #work .card {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
-  
+
+  /* Adjusted the scale*/
   #work .card:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05); /* Adjust the scale factor as needed */
-    cursor:zoom-in;
+    transform: scale(1.05);
+    cursor: zoom-in;
+  }
+  /* Adjusted rotation angle to the right*/
+  #work .card:nth-child(odd):hover {
+    transform: scale(1.05) rotate(3deg);
+  }
+
+  /* Adjusted rotation angle to the left*/
+  #work .card:nth-child(even):hover {
+    transform: scale(1.05) rotate(-3deg);
   }
 }
