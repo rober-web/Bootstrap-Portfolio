@@ -47,7 +47,7 @@ a {
   text-decoration: none;
 }
 .page-section:nth-child(even) {
-  background-color: var(--section-background-color);
+  background-color: var(--main-background-color);
 }
 /* Primary background color, will be applied on the main parts of the design */
 
@@ -64,6 +64,7 @@ a {
   background-color: #1d6584;
   color: #fff;
   outline: 3px solid #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
 }
 
 .btn-form {
@@ -73,8 +74,8 @@ a {
 }
 
 .btn-form:hover {
-  background-color: rgb(204, 133, 0); /* You can adjust these values based on your preference */
-  /* Add any additional styling for the hover state */
+  background-color: rgb(204, 133, 0); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 /**** Work Section ****/
@@ -96,6 +97,19 @@ footer {
 }
 footer p {
   color: #ffffff !important;
+}
+
+footer a {
+padding:10px;
+border-radius: 10px;
+color: #ffffff;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(243, 165, 20, 0.5); 
+  outline: 1px solid rgba(255,255,255,0.1);
+  transition: box-shadow 0.3s ease;
 }
 
 /****************************** MEDIA QUERIES ********************************/
