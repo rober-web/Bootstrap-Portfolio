@@ -66,6 +66,17 @@ a {
   outline: 3px solid #fff;
 }
 
+.btn-form {
+  background-color: rgb(255, 165, 0);
+  color: #fff; /* Set text color to white or a color that contrasts well with the background */
+  /* Add any additional styling you need for your button */
+}
+
+.btn-form:hover {
+  background-color: rgb(204, 133, 0); /* You can adjust these values based on your preference */
+  /* Add any additional styling for the hover state */
+}
+
 /**** Work Section ****/
 
 /**** Form ****/
