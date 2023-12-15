@@ -68,8 +68,6 @@ a {
 
 /**** Work Section ****/
 
-.work {
-}
 
 /**** Form ****/
 
@@ -105,6 +103,11 @@ footer p {
   #work {
     padding-top: 2em;
   }
+
+  #work .card {
+    margin-bottom: 1em;;
+  }
+  
 }
 
 /****************************** SM ********************************/
@@ -126,6 +129,12 @@ footer p {
   .page-section h2 {
     font-size: var(--section-title-size-sm);
   }
+
+  #work .card {
+    margin-bottom: 2em;;
+  }
+  
+
 }
 
 /****************************** MD ********************************/
@@ -152,6 +161,17 @@ footer p {
   .page-section .p-section-text {
     font-size: var(--section-text-size-md);
   }
+
+  #work .card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  #work .card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); /* Adjust the scale factor as needed */
+    cursor:zoom-in;
+  }
+
 }
 
 /****************************** LG ********************************/
@@ -184,5 +204,15 @@ footer p {
 
   .page-section .p-section-text {
     font-size: var(--section-text-size-lg);
+  }
+
+  #work .card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  #work .card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); /* Adjust the scale factor as needed */
+    cursor:zoom-in;
   }
 }
