@@ -2,7 +2,8 @@
   /*Hero Section variables for all sizes */
 
   --main-background-color: rgb(255, 165, 0);
-  --section-background-color:rgb(255, 219, 153);
+  --section-background-color: rgb(255, 219, 153);
+  --dark-color: rgb(35, 32, 32);
   --hero-cta-btn: rgb(36, 123, 160);
   --hero-picture-xs: 70vw;
   --hero-picture-sm: 60vw;
@@ -10,15 +11,22 @@
   --hero-picture-lg: 30vw;
   --hero-height-xs: auto;
   --hero-height-lg: 100vh;
-  --hero-main-title-size-lg:4em;
-  --hero-main-title-size-md:3em;
-  --hero-main-title-size-sm:2.4em;
+  --hero-main-title-size-lg: 4em;
+  --hero-main-title-size-md: 3em;
+  --hero-main-title-size-sm: 2.4em;
 
   /*section height for large screen*/
   --section-height-lg: 100vh;
+
+  /*section font sizes*/
+  --section-title-size-lg: 4em;
+  --section-title-size-md: 3em;
+  --section-title-size-sm: 2.4em;
+
+  --section-text-size-lg: 1.5em;
+  --section-text-size-md: 1.2em;
+  --section-text-size-sm: 1em;
 }
-
-
 
 .centered {
   display: flex;
@@ -33,10 +41,11 @@
 
 * {
   box-sizing: border-box;
+  color: var(--dark-color);
 }
 
-.page-section:nth-child(even){
- background-color: var(--section-background-color);
+.page-section:nth-child(even) {
+  background-color: var(--section-background-color);
 }
 /* Primary background color, will be applied on the main parts of the design */
 
@@ -44,26 +53,25 @@
   background-color: var(--main-background-color);
 }
 
-.btn-hero{
+.btn-hero {
   background-color: var(--hero-cta-btn);
-  color:#fff;
+  color: #fff;
   border-radius: 20px;
 }
-.btn-hero:hover{
-  background-color: #1D6584;
-  color:#fff;
-  outline:3px solid #fff;
+.btn-hero:hover {
+  background-color: #1d6584;
+  color: #fff;
+  outline: 3px solid #fff;
 }
 
 /**** Work Section ****/
 
-.work{
-  
+.work {
 }
 
 /**** Form ****/
 
-form{
+form {
   background-color: #fff;
 }
 /****************************** MEDIA QUERIES ********************************/
@@ -77,6 +85,10 @@ form{
   .hero-height-xs {
     height: var(--hero-height-xs);
   }
+
+  #work {
+    padding-top: 2em;
+  }
 }
 
 /****************************** SM ********************************/
@@ -87,10 +99,17 @@ form{
     width: var(--hero-picture-sm);
   }
 
-  .hero-main-title{
+  #work {
+    padding-top: 2em;
+  }
+
+  .hero-main-title {
     font-size: var(--hero-main-title-size-sm);
   }
 
+  .page-section h2 {
+    font-size: var(--section-title-size-sm);
+  }
 }
 
 /****************************** MD ********************************/
@@ -101,13 +120,21 @@ form{
     max-width: var(--hero-picture-md);
   }
 
-  .hero-main-title-md{
+  .hero-main-title-md {
     font-size: var(--hero-main-title-size-md);
   }
 
   .card-size {
     width: 45%;
     margin-bottom: 2em;
+  }
+
+  .page-section h2 {
+    font-size: var(--section-title-size-md);
+  }
+
+  .page-section .p-section-text{
+    font-size: var(--section-text-size-md);
   }
 }
 
@@ -123,7 +150,7 @@ form{
     height: var(--hero-height-lg) !important;
   }
 
-  .hero-main-title{
+  .hero-main-title {
     font-size: var(--hero-main-title-size-lg);
   }
 
@@ -131,7 +158,15 @@ form{
     width: 20%;
   }
 
-  .page-section{
+  .page-section {
     height: 100vh;
+  }
+
+  .page-section h2 {
+    font-size: var(--section-title-size-lg);
+  }
+
+  .page-section .p-section-text{
+    font-size: var(--section-text-size-lg);
   }
 }
