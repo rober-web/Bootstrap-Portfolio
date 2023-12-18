@@ -6,6 +6,7 @@
   --navbar-hover-color: rgb(255, 165, 0);
   --dark-color: rgb(35, 32, 32);
   --hero-cta-btn: rgb(36, 123, 160);
+  --hero-cta-btn-font-color: rgb(255, 255, 255);
   --hero-picture-xs: 70vw;
   --hero-picture-sm: 60vw;
   --hero-picture-md: 50vw;
@@ -23,10 +24,18 @@
   --section-title-size-lg: 4em;
   --section-title-size-md: 3em;
   --section-title-size-sm: 2.4em;
-
   --section-text-size-lg: 1.5em;
   --section-text-size-md: 1.2em;
   --section-text-size-sm: 1em;
+
+  /*Form*/
+  --form-bg-color: rgb(255, 255, 255);
+  --form-btn-font-color: rgb(255, 255, 255);
+  --form-btn-bg-color: rgb(255, 165, 0);
+
+  /*Footer*/
+
+  --footer-font-color: rgb(255, 255, 255);
 }
 
 .centered {
@@ -66,23 +75,13 @@ a {
 
 .btn-hero {
   background-color: var(--hero-cta-btn);
-  color: #fff;
+  color: var(--hero-cta-btn-font-color);
   border-radius: 20px;
 }
 .btn-hero:hover {
   background-color: #1d6584;
-  color: #fff;
+  color: var(--hero-cta-btn-font-color);
   outline: 3px solid #fff;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-}
-
-.btn-form {
-  background-color: rgb(255, 165, 0);
-  color: #fff; /* Set text color to white or a color that contrasts well with the background */
-}
-
-.btn-form:hover {
-  background-color: rgb(204, 133, 0);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
@@ -97,16 +96,26 @@ a {
   background-color: rgba(255, 255, 255, 0);
 }
 
-
-
 /**** Form ****/
 
 form {
-  background-color: #fff;
+  background-color: var(--form-bg-color);
   border-radius: 10px;
   box-shadow: -12px 12px 10px -8px rgba(0, 0, 0, 0.52);
   -webkit-box-shadow: -12px 12px 10px -8px rgba(0, 0, 0, 0.52);
   -moz-box-shadow: -12px 12px 10px -8px rgba(0, 0, 0, 0.52);
+}
+
+.btn-form {
+  background-color: var(--form-btn-bg-color);
+  color: var(
+    --form-btn-font-color
+  ); /* Set text color to white or a color that contrasts well with the background */
+}
+
+.btn-form:hover {
+  background-color: rgb(204, 133, 0);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 /**** Footer ****/
@@ -115,13 +124,13 @@ footer {
   background-color: var(--dark-color);
 }
 footer p {
-  color: #ffffff !important;
+  color: var(--footer-font-color) !important;
 }
 
 footer a {
   padding: 10px;
   border-radius: 10px;
-  color: #ffffff;
+  color: var(--footer-font-color);
 }
 
 .footer a:hover {
