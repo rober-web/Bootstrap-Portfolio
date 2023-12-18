@@ -3,6 +3,7 @@
 
   --main-background-color: rgb(255, 165, 0);
   --section-background-color: rgb(255, 219, 153);
+  --navbar-hover-color: rgb(255, 165, 0);
   --dark-color: rgb(35, 32, 32);
   --hero-cta-btn: rgb(36, 123, 160);
   --hero-picture-xs: 70vw;
@@ -34,7 +35,7 @@
 }
 
 .skills-badge {
-  background-color: orange;
+  background-color: var(--main-background-color);
   padding: 10px;
   border-radius: 10px;
 }
@@ -54,6 +55,13 @@ a {
 .bg-main-background-color {
   background-color: var(--main-background-color);
 }
+/* Navigation Bar */
+.nav-link:hover, #navbarNav .active {
+  color: var(--navbar-hover-color);
+  border-bottom: 2px solid var(--navbar-hover-color);
+}
+
+/* Hero Section */
 
 .btn-hero {
   background-color: var(--hero-cta-btn);
@@ -70,7 +78,6 @@ a {
 .btn-form {
   background-color: rgb(255, 165, 0);
   color: #fff; /* Set text color to white or a color that contrasts well with the background */
-  /* Add any additional styling you need for your button */
 }
 
 .btn-form:hover {
