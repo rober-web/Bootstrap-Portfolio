@@ -16,6 +16,9 @@
   --hero-main-title-size-lg: 4em;
   --hero-main-title-size-md: 3em;
   --hero-main-title-size-sm: 2.4em;
+  --hero-tagline-size-lg: 1.8em;
+  --hero-tagline-size-md: 1.6em;
+  --hero-tagline-size-sm: 1.5em;
 
   /*section height for large screen*/
   --section-height-lg: 100vh;
@@ -169,6 +172,10 @@ footer a {
     width: var(--hero-picture-sm);
   }
 
+  .tagline {
+    font-size: var(--hero-tagline-size-sm);
+  }
+
   #work {
     padding-top: 2em;
   }
@@ -196,6 +203,10 @@ footer a {
 
   .hero-main-title-md {
     font-size: var(--hero-main-title-size-md);
+  }
+
+  .tagline {
+    font-size: var(--hero-tagline-size-md);
   }
 
   .card-size {
@@ -237,6 +248,10 @@ footer a {
 
   .hero-main-title {
     font-size: var(--hero-main-title-size-lg);
+  }
+
+  .tagline {
+    font-size: var(--hero-tagline-size-lg);
   }
 
   .card-size {
