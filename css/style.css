@@ -1,79 +1,297 @@
 :root {
+  /*Hero Section variables for all sizes */
+
   --main-background-color: rgb(255, 165, 0);
+  --section-background-color: rgb(255, 219, 153);
+  --navbar-hover-color: rgb(255, 165, 0);
+  --dark-color: rgb(35, 32, 32);
+  --hero-cta-btn: rgb(36, 123, 160);
+  --hero-cta-btn-font-color: rgb(255, 255, 255);
   --hero-picture-xs: 70vw;
   --hero-picture-sm: 60vw;
   --hero-picture-md: 50vw;
   --hero-picture-lg: 30vw;
-
-  --hero-height-xs:auto;
+  --hero-height-xs: auto;
   --hero-height-lg: 100vh;
+  --hero-main-title-size-lg: 4em;
+  --hero-main-title-size-md: 3em;
+  --hero-main-title-size-sm: 2.4em;
+  --hero-tagline-size-lg: 1.8em;
+  --hero-tagline-size-md: 1.6em;
+  --hero-tagline-size-sm: 1.5em;
+
+  /*section height for large screen*/
+  --section-height-lg: 100vh;
+
+  /*section font sizes*/
+  --section-title-size-lg: 4em;
+  --section-title-size-md: 3em;
+  --section-title-size-sm: 2.4em;
+  --section-text-size-lg: 1.5em;
+  --section-text-size-md: 1.2em;
+  --section-text-size-sm: 1em;
+
+  /*Form*/
+  --form-bg-color: rgb(255, 255, 255);
+  --form-btn-font-color: rgb(255, 255, 255);
+  --form-btn-bg-color: rgb(255, 165, 0);
+
+  /*Footer*/
+
+  --footer-font-color: rgb(255, 255, 255);
 }
 
+.centered {
+  display: flex;
+  justify-content: center;
+}
 
+.skills-badge {
+  background-color: var(--main-background-color);
+  padding: 10px;
+  border-radius: 10px;
+}
 
+* {
+  box-sizing: border-box;
+  color: var(--dark-color);
+}
 
+a {
+  text-decoration: none;
+}
+
+.page-section:nth-child(even) {
+  background-color: var(--main-background-color);
+}
+
+/* Primary background color, will be applied on the main parts of the design */
 
 .bg-main-background-color {
   background-color: var(--main-background-color);
 }
 
-* {
-  box-sizing: border-box;
+/* Navigation Bar */
+.nav-link:hover,
+#navbarNav .active {
+  color: var(--navbar-hover-color);
+  border-bottom: 2px solid var(--navbar-hover-color);
 }
 
-.hero-picture-md {
+/* Hero Section */
+
+.btn-hero {
+  background-color: var(--hero-cta-btn);
+  color: var(--hero-cta-btn-font-color);
+  border-radius: 20px;
 }
 
-#hero {
-   
+.btn-hero:hover {
+  background-color: #1d6584;
+  color: var(--hero-cta-btn-font-color);
+  outline: 3px solid #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
+
+/**** Skills ****/
+
+#skills {
+  background-image: url("/images/icon-tools.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/**** Form ****/
+
+form {
+  background-color: var(--form-bg-color);
+  border-radius: 10px;
+  box-shadow: -12px 12px 10px -8px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: -12px 12px 10px -8px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: -12px 12px 10px -8px rgba(0, 0, 0, 0.52);
+}
+
+.btn-form {
+  background-color: var(--form-btn-bg-color);
+  color: var(
+    --form-btn-font-color
+  ); /* Set text color to white or a color that contrasts well with the background */
+}
+
+.btn-form:hover {
+  background-color: rgb(204, 133, 0);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/**** Footer ****/
+
+footer {
+  background-color: var(--dark-color);
+}
+
+footer p {
+  color: var(--footer-font-color) !important;
+}
+
+footer a {
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--footer-font-color);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(243, 165, 20, 0.5);
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/****************************** MEDIA QUERIES ********************************/
 
 /* Extra Small (xs) - Default: Up to 576px */
 @media (min-width: 0px) and (max-width: 575.98px) {
-  /* Your styles for extra small screens go here */
-
   .hero-picture-xs {
     width: var(--hero-picture-xs);
   }
 
-  .hero-height-xs{
+  .hero-height-xs {
     height: var(--hero-height-xs);
+  }
+
+  #work {
+    padding-top: 2em;
+  }
+
+  #work .card {
+    margin-bottom: 1em;
   }
 }
 
+/****************************** SM ********************************/
 
 /* Small (sm) - Media Query: @media (min-width: 576px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    /* Your styles for small screens go here */
-    .hero-picture-xs {
-        width: var(--hero-picture-sm);
-      }
-
+  .hero-picture-xs {
+    width: var(--hero-picture-sm);
   }
 
+  .tagline {
+    font-size: var(--hero-tagline-size-sm);
+  }
+
+  #work {
+    padding-top: 2em;
+  }
+
+  .hero-main-title {
+    font-size: var(--hero-main-title-size-sm);
+  }
+
+  .page-section h2 {
+    font-size: var(--section-title-size-sm);
+  }
+
+  #work .card {
+    margin-bottom: 2em;
+  }
+}
+
+/****************************** MD ********************************/
 
 /* Medium (md) - Media Query: @media (min-width: 768px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    /* Your styles for medium screens go here */
-
-    .hero-picture-md {
-        max-width: var(--hero-picture-md);
-      }
-
-
-
+  .hero-picture-md {
+    max-width: var(--hero-picture-md);
   }
 
-/* Large (lg) - Media Query: @media (min-width: 992px) */
-@media (min-width: 992px) and (max-width: 2024px) {
-  /* Your styles for large screens go here */
+  .hero-main-title-md {
+    font-size: var(--hero-main-title-size-md);
+  }
 
+  .tagline {
+    font-size: var(--hero-tagline-size-md);
+  }
+
+  .card-size {
+    width: 45%;
+    margin-bottom: 2em;
+  }
+
+  .page-section h2 {
+    font-size: var(--section-title-size-md);
+  }
+
+  .page-section .p-section-text {
+    font-size: var(--section-text-size-md);
+  }
+
+  #work .card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  /*added box-shadow */
+  #work .card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    cursor: zoom-in;
+  }
+}
+
+/****************************** LG ********************************/
+
+/* Large (lg) - Media Query: @media (max-width: 2024px) */
+@media (min-width: 992px) and (max-width: 2024px) {
   .hero-picture-lg {
     max-width: var(--hero-picture-lg);
   }
 
-  .hero-height-lg{
+  .hero-height-lg {
     height: var(--hero-height-lg) !important;
   }
 
+  .hero-main-title {
+    font-size: var(--hero-main-title-size-lg);
+  }
+
+  .tagline {
+    font-size: var(--hero-tagline-size-lg);
+  }
+
+  .card-size {
+    width: 20%;
+  }
+
+  .page-section {
+    height: 100vh;
+  }
+
+  .page-section h2 {
+    font-size: var(--section-title-size-lg);
+  }
+
+  .page-section .p-section-text {
+    font-size: var(--section-text-size-lg);
+  }
+
+  /* Added transition*/
+  #work .card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Adjusted the scale*/
+  #work .card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    cursor: zoom-in;
+  }
+  /* Adjusted rotation angle to the right*/
+  #work .card:nth-child(odd):hover {
+    transform: scale(1.05) rotate(3deg);
+  }
+
+  /* Adjusted rotation angle to the left*/
+  #work .card:nth-child(even):hover {
+    transform: scale(1.05) rotate(-3deg);
+  }
 }
