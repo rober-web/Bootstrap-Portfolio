@@ -231,10 +231,12 @@
     <!--Parallax Efect-->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var skillsSection = document.getElementById("skills");
+            /*get the section skills and add it to the skillsSection variable */
+            let skillsSection = document.getElementById("skills");
 
             window.addEventListener("scroll", function () {
-                var scrollPosition = window.scrollY;
+                /*add the scroll styles to the skillsSection variable changing the scroll position */
+                let scrollPosition = window.scrollY;
                 skillsSection.style.backgroundPositionY = -scrollPosition * 0.3 + "px";
             });
         });
