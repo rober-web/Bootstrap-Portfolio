@@ -16,6 +16,10 @@ Welcome to my portfolio website repository! In this project, I've recreated a pr
 - Box Shadow CSS Generator (https://cssgenerator.org/box-shadow-css-generator.html) -- > online platfor to help to create css effects efficiently.
 - Coolors (https://coolors.co/) --> platform to help to chosen the best color matching.
 - Huemint (https://huemint.com/) --> similar to coolors, it helps on choosing the best color for the website.
+- MDM Web Docs (https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event) --> to apply to the scroll function.
+- w3Schools (https://www.w3schools.com/jsref/met_win_scrollto.asp) --> to apply to the scroll function.
+
+
 
 ## To Access
 
