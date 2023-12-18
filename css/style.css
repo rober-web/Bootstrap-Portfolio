@@ -56,17 +56,21 @@
   box-sizing: border-box;
   color: var(--dark-color);
 }
+
 a {
   text-decoration: none;
 }
+
 .page-section:nth-child(even) {
   background-color: var(--main-background-color);
 }
+
 /* Primary background color, will be applied on the main parts of the design */
 
 .bg-main-background-color {
   background-color: var(--main-background-color);
 }
+
 /* Navigation Bar */
 .nav-link:hover,
 #navbarNav .active {
@@ -81,14 +85,13 @@ a {
   color: var(--hero-cta-btn-font-color);
   border-radius: 20px;
 }
+
 .btn-hero:hover {
   background-color: #1d6584;
   color: var(--hero-cta-btn-font-color);
   outline: 3px solid #fff;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
-
-/**** Work Section ****/
 
 /**** Skills ****/
 
@@ -126,6 +129,7 @@ form {
 footer {
   background-color: var(--dark-color);
 }
+
 footer p {
   color: var(--footer-font-color) !important;
 }
