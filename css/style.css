@@ -96,7 +96,7 @@ a {
 /**** Skills ****/
 
 #skills {
-  background-image: url("./images/icon-tools.jpg");
+  background-image: URL("../images/icon-tools.jpg");
   background-repeat: repeat;
   background-attachment: fixed;
   background-color: rgba(255, 255, 255, 0);
